@@ -31,7 +31,7 @@ const lookup = {
   ",": ",",
 };
 
-function rot13(encodedStr) {
+function rot13(encodedString) {
   return encodedString.replace(/[A-Z]/g, char => {
     const charCode = char.charCodeAt(0);
     const shiftedCode = charCode >= 78 ? charCode - 13 : charCode + 13;
